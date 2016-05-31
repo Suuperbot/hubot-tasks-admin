@@ -1,0 +1,44 @@
+{
+  "name": "hubot-tasks-admin",
+  "description": "A simple hubot script to manage tasks",
+  "version": "0.0.0",
+  "author": "Venkat Kaniti",
+  "license": "MIT",
+  "keywords": "hubot-tasks-admin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-tasks-admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-tasks-admin/issues"
+  },
+  "dependencies": {
+    "lodash": "4.13.1"
+  },
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "coffee-coverage": "1.0.1",
+    "coffee-script": "1.6.3",
+    "dirty-chai": "1.2.2",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-release": "~0.11.0",
+    "hubot": "2.x",
+    "hubot-test-helper": "^1.3.0",
+    "istanbul": "0.4.3",
+    "matchdep": "~0.3.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test",
+	"test-coverage": "mocha && istanbul cover ./src/tasks-admin.js report text-summary lcov"
+  }
+}
